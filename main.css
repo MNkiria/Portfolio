@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+html{
+    overflow-x: hidden;
+}
+
+button{
+    border: none;
+    font: inherit;
+}
+
 ul{
     list-style: none;
 }
@@ -15,12 +24,13 @@ a{
 
 body{
     font-family: "Inter", sans-serif;
-    background-color: honeydew;
+    background-color: rgba(105, 105, 105);
+    overflow-x: hidden;
     
 }
 
 .header{
-    background-color: rgb(60,179,113);   
+    background-color: rgb(211, 211,211);   
     position: fixed;
     width: 100%;
 }
@@ -51,7 +61,7 @@ body{
 }
 
 .link{
-    color: rgba(214, 223, 223, 0.75);
+    color: rgba(184, 134, 11, 0.75);
     font-size: 20px;
 }
 
@@ -67,6 +77,94 @@ body{
     margin: 5px 0;
     transition: all 0.3s ease-in-out;
 }
+
+.homer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 150px;
+}
+.profile{
+    max-width: 50%;
+    max-height: 60%;
+    transition: 0.5s;
+}
+.profile :hover{
+    transform: scale(1.2);
+}
+
+.hero_text{
+    max-width: 500px;
+    display:flex;
+    flex-direction: column;
+}
+.hero_text h5{
+    color: ;
+    font-size: 18px;
+}
+
+.hero_text h5 span{
+    color: ;
+    font-size: 30 px;
+}
+.hero_text h1{
+    color: ;
+    font-size: 40px;
+}
+
+.container{
+    max-width: 1200px;
+    padding: 300px 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.card{
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0  3px 3px rgba(0, 0, 0, 0.15 );
+    display: flex;
+    flex-direction: column;
+
+}
+
+.card:nth-of-type(1) {
+    flex: 1 300px;
+}
+
+.card:nth-of-type(2) {
+    flex: 1 300px;
+}
+
+.card:nth-of-type(3) {
+    flex: 1 300px;
+}
+
+.img{
+    max-height: 100px;
+    max-width: 100px;
+    object-fit: cover;
+}
+
+.heading{
+    margin: 10px 0 15px;
+}
+
+.description{
+    margin-bottom: 10px;
+}
+
+.btn{
+    border-radius: 100px;
+    padding: 10px 15px;
+    font-size: 12px;
+    margin-top: auto ;
+}
+
+
 
 .nav--open{
     transform: translate(0) !important;
